@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="RPG" Height="535.276" Width="601.886">
     <Grid>
-        <TabControl x:Name="tab_control" Margin="0,0,0,0">
+        <TabControl x:Name="tab_control" Margin="0,0,0,0" SelectionChanged="Tab_control_SelectionChanged">
             <TabItem x:Name="tab_me" Header="Мой герой">
                 <Grid Background="#FFE5E5E5">
                     <Grid.RowDefinitions>
@@ -56,7 +56,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btn_apply_settings" Content="Применить" Margin="10,10.5,10,11" Grid.Row="10" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btn_apply_settings" Content="Применить" Margin="10,10.5,10,11" Grid.Row="10" Grid.ColumnSpan="2" Click="Btn_apply_settings_Click"/>
                     <TextBlock x:Name="tb_text_sett_name" Margin="10,10,10,10.5" TextWrapping="Wrap" Text="Имя" FontWeight="Bold"/>
                     <TextBox x:Name="tb_sett_name" Grid.Column="1" Margin="10,10,10,9.5" TextWrapping="Wrap"/>
                     <TextBlock x:Name="tb_text_sett_age" Margin="10,8.5,10,9.5" Grid.Row="1" TextWrapping="Wrap" Text="Возраст" FontWeight="Bold"/>
